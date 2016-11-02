@@ -1,2 +1,2 @@
-# dotfiles
-macOS dotfiles.
+# Dotfiles
+Minimalistic macOS/Linux dotfiles.
