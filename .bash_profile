@@ -12,3 +12,6 @@ export HISTCONTROL=ignoredups
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
+
+# Cargo modules bin
+export PATH=$PATH:/Users/jakub/.cargo/bin
