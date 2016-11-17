@@ -23,3 +23,6 @@ alias localip="ipconfig getifaddr en0"
 
 # Show sizes for all files and folders in current location
 alias howbig="du -sch .[!.]* * | sort -k 2"
+
+# Change text to lowercase
+alias trun='tr [A-Z] [a-z]'
