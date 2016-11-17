@@ -14,4 +14,7 @@ export HISTCONTROL=ignoredups
 shopt -s cdspell
 
 # Cargo modules bin
-export PATH=$PATH:/Users/jakub/.cargo/bin
+export PATH=$PATH:~/.cargo/bin
+
+# Rust source code (used with racer utility)
+export RUST_SRC_PATH=~/Documents/GitHub/rust/src
