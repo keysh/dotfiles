@@ -5,4 +5,4 @@ reset=$(tput sgr0)
 blue=$(tput setaf 4)
 
 # Set the prompt
-PS1="\[$blue\]\w\[$reset\] \$ "
+PS1="\n\[$blue\]\u\[$reset\] > \[$blue\]\h\[$reset\] > \[$blue\]\w\[$reset\]\n\$ "
