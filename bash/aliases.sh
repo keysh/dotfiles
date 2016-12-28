@@ -14,6 +14,9 @@ alias ll="ls -lhA ${ls_color}"
 # Enable colored `grep` output
 alias grep="grep --color=auto"
 
+# Enable aliases to be executed with sudo
+alias sudo="sudo "
+
 # Print current week number
 alias week="date +%V"
 
