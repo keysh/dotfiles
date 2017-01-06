@@ -6,7 +6,7 @@ tput sgr0
 # Color configuration
 reset=$(tput sgr0)
 bold=$(tput bold)
-violet=$(tput setaf 61)
+blue=$(tput setaf 4)
 
 # Get git branch name
 function branch {
@@ -28,10 +28,10 @@ function branch {
 }
 
 PS1="\n"
-PS1+="\[$bold\]\u\[$violet\] ‣ \[$reset\]"
-PS1+="\[$bold\]\h\[$violet\] ‣ \[$reset\]"
+PS1+="\[$bold\]\u\[$blue\] ‣ \[$reset\]"
+PS1+="\[$bold\]\h\[$blue\] ‣ \[$reset\]"
 PS1+="\[$bold\]\w\[$reset\] "
-PS1+="\[$bold\]\[$violet\]\$(branch)\[$reset\]"
+PS1+="\[$bold\]\[$blue\]\$(branch)\[$reset\]"
 PS1+="\n"
 PS1+="\$ "
 
