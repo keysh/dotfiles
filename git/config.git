@@ -1,9 +1,6 @@
 [core]
     excludesfile = ~/.gitignore
 
-[user]
-    name  =
-    email =
-
 [credential]
     helper = osxkeychain
+
