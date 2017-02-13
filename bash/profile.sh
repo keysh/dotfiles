@@ -17,7 +17,11 @@ export HISTCONTROL=ignoredups
 export RUST_SRC_PATH=$HOME/Documents/GitHub/rust/src
 
 # Java installation path
-export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:bin/javac::")
+if [[ $(uname) == "Darwin" ]]; then
+    export JAVA_HOME=$(/usr/libexec/java_home)
+else
+    export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:bin/javac::")
+fi
 
 # Android SDK
 export ANDROID_HOME=$HOME/.local/share/android-sdk
