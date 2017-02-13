@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Load the shell dotfiles
-source ~/.bash_prompt
-source ~/.bash_aliases
+source $HOME/.bash_prompt
+source $HOME/.bash_aliases
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
@@ -14,13 +14,13 @@ export EDITOR="vim"
 export HISTCONTROL=ignoredups
 
 # Rust source code (used with racer utility)
-export RUST_SRC_PATH=~/Documents/GitHub/rust/src
+export RUST_SRC_PATH=$HOME/Documents/GitHub/rust/src
 
 # Java installation path
 export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:bin/javac::")
 
 # Android SDK
-export ANDROID_HOME=~/.local/share/android-sdk
+export ANDROID_HOME=$HOME/.local/share/android-sdk
 
 # Configure PATH
 PATH=$PATH:$HOME/.cargo/bin:$HOME/.local/bin:$HOME/.local/share/android-sdk/tools:$HOME/.local/share/android-sdk/platform-tools
