@@ -29,3 +29,8 @@ alias howbig="du -sch .[!.]* * | sort -k 2"
 
 # Change text to lowercase
 alias trun='tr [A-Z] [a-z]'
+
+# Reset Launchpad layout on macOS
+if [[ $(uname) == "Darwin" ]]; then
+  alias rlaunch='defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock'
+fi
