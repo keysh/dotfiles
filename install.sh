@@ -18,6 +18,10 @@ cp ./bash/prompt.sh  ~/.bash_prompt
 cp ./bash/aliases.sh ~/.bash_aliases
 cp ./bash/input.sh   ~/.inputrc
 
+# Binaries
+mkdir -p ~/.local/bin
+cp ./bin/btc ~/.local/bin/btc
+
 # Git configuration
 cp ./git/config.git  ~/.gitconfig
 cp ./git/ignore.git  ~/.gitignore

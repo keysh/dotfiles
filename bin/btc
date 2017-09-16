@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+
+const https = require('https');
+
+const options = {
+    host: 'api.coinbase.com',
+    path: '/v2/prices/BTC-EUR/spot',
+    port: 443,
+    method: 'GET',
+    headers: {
+        'cb-version': '2015-04-08'
+    }
+}
+
+const request = https.request(options, (response) => {
+    let data = '';
+
+    response.setEncoding('utf8');
+    response.on('data', (chunk) => data += chunk);
+    response.on('end', () => {
+        const price = JSON.parse(data).data.amount;
+        console.log(`1BTC = ${price}EUR`);
+    })
+});
+
+request.on('error', (error) => console.error(`ERROR: ${error}`));
+request.end();
