@@ -21,8 +21,8 @@ alias sudo="sudo "
 alias week="date +%V"
 
 # IP addresses
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
+alias externalip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # Show sizes for all files and folders in current location
 alias howbig="du -sch .[!.]* * | sort -k 2"
