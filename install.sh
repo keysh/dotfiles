@@ -20,7 +20,7 @@ cp ./bash/input.sh   ~/.inputrc
 
 # Binaries
 mkdir -p ~/.local/bin
-cp ./bin/btc ~/.local/bin/btc
+cp ./bin/crypto ~/.local/bin/crypto
 
 # Git configuration
 cp ./git/config.git  ~/.gitconfig
